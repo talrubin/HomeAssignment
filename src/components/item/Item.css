@@ -1,0 +1,57 @@
+.item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 320px;
+    width: 280px;
+    border-style: ridge;
+    padding: 20px;
+    margin: 15px 80px;
+}
+
+.favorite-beer {
+    position: absolute;
+    margin: 0.5rem;
+    top: 0;
+    right: 0;
+}
+
+.fa {
+    color: gold;
+}
+
+.far {
+    color: black;
+}
+
+.fa-star {
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.beer-image {
+    width: 40%;
+    cursor: pointer;
+    max-height: 12vw;
+}
+
+@media only screen and (max-width: 640px) {
+    .beer-image {
+        width: 35%;
+        height: 80%;
+        max-height: none;
+    }
+}
+
+.hideRank {
+    display: none;
+}
+
+.showRank {
+    position: absolute;
+    margin: 0.5rem;
+    top: 0;
+    left: 0;
+}

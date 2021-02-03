@@ -1,0 +1,94 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-main {
+  position: fixed;
+  background: white;
+  width: 70%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+p {
+  margin: 0 15px 0 15px !important;
+  font-size: 1rem;
+}
+
+.display-block {
+  display: block !important;
+}
+
+.display-none {
+  display: none;
+}
+
+.beer-name {
+  grid-area: header;
+}
+
+.beer-img {
+  grid-area: menu;
+  max-width: 10vw;
+  text-align: center !important;
+}
+
+.beer-tagline {
+  grid-area: first;
+}
+
+.beer-brewed {
+  grid-area: second;
+}
+
+.beer-description {
+  grid-area: footer;
+}
+
+.beer-tagline-header {
+  grid-area: tagline;
+}
+
+.beer-brewed-header {
+  grid-area: brewed;
+}
+
+.beer-description-header {
+  grid-area: description;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'header header header header header header'
+  'menu tagline first first first first'
+  'menu brewed second second second second'
+  'menu description footer footer footer footer';
+  grid-gap: 10px;
+  background-color: rgba(73, 63, 252, 1);
+  padding: 10px;
+}
+
+.grid-container>div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 0;
+  font-size: 30px;
+  text-align: left;
+}
+
+.grid-container>div img {
+  max-width:100%;
+}
+
+.modal-img {
+  object-fit: contain;
+  width: 20%;
+  height: 100%;
+}

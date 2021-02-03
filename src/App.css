@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (max-width: 640px) {
+  #root {
+    width: fit-content;
+  }
+}
+
+.row {
+  margin: 0 !important;
+}
+
+.button {
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  background-color: rgba(73, 63, 252, 1);
+}
+
+.title {
+  padding: 10px 100px;
+  align-items: center;
+}
+
+.beers {
+  text-align: center;
+  justify-content: space-around;
+}
